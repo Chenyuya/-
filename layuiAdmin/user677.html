@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户管理</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="layui-v2.5.4/layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="css/user667.css " />
+	</head>
+	<body>
+		<div class="manage">
+			<div class="manage_left">
+				<div class="left_head">
+					组织机构
+					<span class="glyphicon glyphicon-edit"></span>
+					<span class="glyphicon glyphicon-chevron-down"></span>
+					<span class="glyphicon glyphicon-refresh"></span>
+				</div>
+				<div class="left_bot">
+					<div id="test1"></div>
+
+					<script src="layui-v2.5.4/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+
+					<script>
+						layui.use('tree', function(){
+					  var tree = layui.tree;
+					 
+					  //渲染
+					  var inst1 = tree.render({
+					  elem: '#test1'  //绑定元素
+					  ,data: [{
+						title: '江西' //一级菜单
+						,children: [{
+						  title: '南昌' //二级菜单
+						  ,children: [{
+							title: '高新区' //三级菜单
+							//…… //以此类推，可无限层级
+						  }]
+						}]
+					  },]
+					});
+					});
+					</script>
+				</div>
+			</div>
+			<div class="manage_right">
+				<div class="info">
+					系统模块：<input type="text" name="" id="input" value="" />
+					操作人员：<input type="text" name="" id="input" value="" />
+					操作状态：<select name="ZT" id="input">
+						<option value="新增">所有</option>
+						<option value="成功">成功</option>
+						<option value="失败">失败</option>
+					</select>
+					操作时间：
+					<div class="layui-inline">
+						<!-- 注意：这一层元素并不是必须的 -->
+						<input type="text" class="layui-input" id="test" placeholder="开始时间">
+					</div>
+					-
+					<div class="layui-inline">
+						<!-- 注意：这一层元素并不是必须的 -->
+						<input type="text" class="layui-input" id="test1" placeholder="结束时间">
+					</div>
+					<!-- <script src="layui-v2.5.4/layui/layui.js"></script>
+					<script>
+						layui.use('laydate', function(){
+						  var laydate = layui.laydate;
+						  laydate.render({
+						  	elem: '#test' //指定元素
+						  });
+						  //执行一个laydate实例
+						  laydate.render({
+							elem: '#text' //指定元素
+						  });
+						});
+					</script> -->
+
+					<button type="button" id="btn" class="layui-btn layui-btn-sm layui-btn-radius">
+						<span class="glyphicon glyphicon-search"></span>搜索
+					</button>
+					<button type="button" id="btn1" class="layui-btn layui-btn-sm layui-btn-radius layui-btn-warm">
+						<span class="glyphicon glyphicon-refresh"></span>重置
+					</button>
+				</div>
+
+				<div class="hack">
+					<ul class="hack_top">
+						<li>
+							<button type="button" class="layui-btn layui-btn-sm layui-btn-normal">
+								<span class="glyphicon glyphicon-plus"></span>
+								新增
+							</button>
+							<button type="button" class="layui-btn layui-btn-sm">
+								<span class="glyphicon glyphicon-edit"></span>
+								修改
+							</button>
+							<button type="button" class="layui-btn layui-btn-sm layui-btn-danger">
+								<span class="glyphicon glyphicon-remove"></span>
+								删除
+							</button>
+							<button type="button" class="layui-btn layui-btn-sm">
+								<span class="glyphicon glyphicon-edit"></span>
+								导入
+							</button>
+							<button type="button" class="layui-btn layui-btn-sm layui-btn-normal layui-btn-warm">
+								<span class="glyphicon glyphicon-save"></span>
+								导出
+							</button>
+						</li>
+						<li>
+							<div class="layui-btn-group">
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+									<i class="layui-icon">&#xe654;</i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+									<i class="layui-icon">&#xe642;</i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+									<i class="layui-icon">&#xe640;</i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-xs">
+									<i class="layui-icon layui-icon-app"></i>
+								</button>
+							</div>
+						</li>
+					</ul>
+
+					<div class="hack_bot">
+						<table border="0" cellspacing="" cellpadding="">
+							<tr>
+								<td><input type="radio" name="" id="" value="" /></td>
+								<td><a href="">用户ID</a></td>
+								<td><a href="">登录名称</a></td>
+								<td><a href="">用户名称</a></td>
+								<td><a href="">部门</a></td>
+								<td><a href="">手机</a></td>
+								<td><a href="">用户状态</a></td>
+								<td>创建时间</td>
+								<td class="last"><a href="">操作</a></td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="" id="" value="" /></td>
+								<td>1</td>
+								<td>admin</td>
+								<td>若依</td>
+								<td>研发部门</td>
+								<td>15888888888</td>
+								<td><input type="checkbox" name="xxx" lay-skin="switch"></td>
+								<td>2018-03-16 11:33:00</td>
+								<td class="last">
+									<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+										<span class="glyphicon glyphicon-plus"></span>
+										编辑
+									</button>
+									<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+										<span class="glyphicon glyphicon-save"></span>
+										删除
+									</button>
+									<button type="button" id="btn1" class="layui-btn layui-btn-xs layui-btn-warm">
+										<span class="glyphicon glyphicon-refresh"></span>
+										重置
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="radio" name="" id="" value="" /></td>
+								<td>2</td>
+								<td>ry</td>
+								<td>若依</td>
+								<td>测试部门</td>
+								<td>15666666666</td>
+								<td><input type="checkbox" name="xxx" lay-skin="switch"></td>
+								<td>2018-03-16 11:33:00</td>
+								<td class="last">
+									<button type="button" class="layui-btn layui-btn-xs layui-btn-normal">
+										<span class="glyphicon glyphicon-plus"></span>
+										编辑
+									</button>
+									<button type="button" class="layui-btn layui-btn-xs layui-btn-normal layui-btn-warm">
+										<span class="glyphicon glyphicon-save"></span>
+										删除
+									</button>
+									<button type="button" id="btn1" class="layui-btn layui-btn-xs layui-btn-warm">
+										<span class="glyphicon glyphicon-refresh"></span>
+										重置
+									</button>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="footer">
+						第 1 到 2 条，共 2 条记录。
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

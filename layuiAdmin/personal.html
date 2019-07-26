@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户个人信息</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/personal.css" />
+		<link rel="stylesheet" href="layui-v2.5.4/layui/css/layui.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="left">
+				<div class="left-top">
+					个人资料
+				</div>
+				<div class="left-bot">
+					<div class="text-center">
+						<p>
+							<img class="img-circle img-lg" src="img/profile%20(2).jpg">
+						</p>
+						<p style="margin: 0 0 10px 0;">
+							<a href="#">修改对象</a>
+						</p>
+					</div>
+					<ul class="list-group list-group-striped">
+						<li class="list-group-item">
+							<i class="glyphicon glyphicon-user"></i>
+							<b class="font-noraml">登录名称</b>
+							<p class="pull-right">admin</p>
+						</li>
+						<li class="list-group-item">
+							<i class="glyphicon glyphicon-earphone"></i>
+							<b class="font-noraml">手机号码</b>
+							<p class="pull-right">15888888888</p>
+						</li>
+						<li class="list-group-item">
+							<i class="glyphicon glyphicon-gift"></i>
+							<b class="font-noraml">所属部门</b>
+							<p class="pull-right">研发部门/董事长</p>
+						</li>
+						<li class="list-group-item">
+							<i class="glyphicon glyphicon-envelope"></i>
+							<b class="font-noraml">邮箱地址</b>
+							<p class="pull-right">ry@163.com</p>
+						</li>
+						<li class="list-group-item">
+							<i class="glyphicon glyphicon-calendar"></i>
+							<b class="font-noraml">创建时间</b>
+							<p class="pull-right">2018-03-16</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-top">
+					基本资料
+				</div>
+				<div class="right-bot">
+					<div class="nav-tabs-custom">
+						<div class="layui-tab">
+							<div class="layui-tab">
+								<ul class="layui-tab-title">
+									<li class="layui-this">基本资料</li>
+									<li>修改密码</li>
+								</ul>
+								<div class="layui-tab-content">
+									<div class="layui-tab-item layui-show">
+										<form class="form-horizontal" id="user-info" novalidate="novalidate">
+											<div class="form-group">
+												<label class="col-sm-2 control-label" style="color: #676A6C;">用户名称：</label>
+												<div class="col-sm-10">
+													<input type="text" class="form-control valid" name="username" id="username" placeholder="请输入用户名称" value="若依"
+													 aria-required="true" />
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-sm-2 control-label" style="color: #676A6C;">手机号码：</label>
+												<div class="col-sm-10">
+													<input type="text" class="form-control valid" name="username" id="username" placeholder="请输入手机号码" value="15888888888"
+													 aria-required="true" />
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-sm-2 control-label" style="color: #676A6C;">邮箱：</label>
+												<div class="col-sm-10">
+													<input type="text" class="form-control valid" name="username" id="username" placeholder="请输入邮箱" value="ry@163.com"
+													 aria-required="true" />
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="col-sm-2 control-label" style="color: #676A6C;">性别：</label>
+												<div class="col-sm-10">
+													<div class="">
+														<input type="radio" name="sex" value="男" title="男">男
+														<input type="radio" name="sex" value="女" title="女" checked>女
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="layui-form-item" style="margin:10px 150px;">
+													<div class="layui-input-block">
+														<button class="layui-btn layui-btn-sm" lay-filter="formDemo"><span class="glyphicon glyphicon-ok"></span>保存<tton>
+														<button type="reset" class="layui-btn layui-btn-sm layui-btn-warm layui-btn-primary"><span class="glyphicon glyphicon-share-alt"></span>关闭<tton>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="layui-tab-item">
+										<form class="form-horizontal" id="user-password" novalidate="novalidate">
+											<div class="layui-form-item">
+												<label class="layui-form-label" style="padding: 9px 5px;">旧密码：</label>
+												<div class="layui-input-block">
+													<input type="password" name="password" required lay-verify="required" placeholder="请输入旧密码" autocomplete="off"
+													 class="layui-input">
+												</div>
+											</div>
+											<div class="layui-form-item">
+												<label class="layui-form-label" style="padding: 9px 5px;">新密码：</label>
+												<div class="layui-input-block">
+													<input type="password" name="password" required lay-verify="required" placeholder="请输入新密码" autocomplete="off"
+													 class="layui-input">
+												</div>
+											</div>
+											<div class="layui-form-item">
+												<label class="layui-form-label" style="padding: 9px 5px;">确认密码：</label>
+												<div class="layui-input-block">
+													<input type="password" name="password" required lay-verify="required" placeholder="请确认密码" autocomplete="off"
+													 class="layui-input">
+												</div>
+											</div>
+											<div class="layui-form-item">
+												<div class="layui-input-block">
+													<button class="layui-btn layui-btn-sm" lay-filter="formDemo"><span class="glyphicon glyphicon-ok"></span>保存<tton>
+													<button type="reset" class="layui-btn layui-btn-sm layui-btn-warm layui-btn-primary"><span class="glyphicon glyphicon-share-alt"></span>关闭<tton>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="layui-v2.5.4/layui/layui.all.js" />
+		</script>
+		<script>
+			//注意：选项卡 依赖 element 模块，否则无法进行功能性操作
+			layui.use('element', function() {
+				var element = layui.element;
+
+				//…
+			});
+		</script>
+	</body>
+</html>

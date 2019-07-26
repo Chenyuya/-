@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>角色管理</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Timing%20tasks.css"/>
+		<link rel="stylesheet" type="text/css" href="layui-v2.5.4/layui/css/layui.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<div class="top">
+				<ul>
+					<li>任务名称：<input type="text" name="loginname"/></li>
+					<li>任务分析：<input type="text" name="loginname" value="所有"/></li>
+					<li>任务状态：<input type="text" name="loginname" value="所有"/></li>
+					<li class="layui-btn layui-btn-radius layui-btn-normal"><i class="layui-icon layui-icon-search"></i>搜索</li>
+					<li class="layui-btn layui-btn-radius layui-btn-warm"><i class="layui-icon layui-icon-refresh-3"></i>重置</li>
+				</ul>
+			</div>
+			<div class="nav">
+				<div class="bootstrap-table">
+					<div class="btn-kuai">
+						<li>
+							<a href=""><i class="layui-btn layui-icon layui-icon-add-1" >新增</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-survey"style="background: #6dd9c3;">修改</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-close"style="background: #f59da6;">删除</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-upload-circle"style="background: #f7a54a;">导出</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-align-right"style="background: #21b9bb;">日志</i></a>
+						</li>
+						<li>
+							<div class="layui-btn-group">
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-search"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-refresh-3"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-tabs"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-table"></i>
+								</button>
+							</div>
+						</li>
+					</div>
+					<div class="btn-nav">
+						<table border="0" cellspacing="" cellpadding="">
+							<tr style="background: #eff3f8;">
+								<td><input type="checkbox" name="btSelectAll"/>
+								任务编号
+								</td>
+								<td>任务名称</td>
+								<td>任务分组</td>
+								<td>调用目标字符串</td>
+								<td>执行表达式</td>
+								<td>角色状态</td>
+								<td>创建时间</td>
+								<td>操作</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="btSelectAll"/>  1</td>
+								<td>系统默认（无参）</td>
+								<td>默认</td>
+								<td>ryTask.ryNoParams</td>
+								<td>0/10 * * * * ?</td>
+								<td>
+									<input type="checkbox" name="btSelectAll"/>
+								</td>
+								<td>2018-03-16 11:33:00	</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-ok-circle"style="background: #1ab394;">执行一次</i></a>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="btSelectAll"/>  2</td>
+								<td>系统默认（有参）</td>
+								<td>默认</td>
+								<td>ryTask.ryNoParams</td>
+								<td>0/10 * * * * ?</td>
+								<td>
+									<input type="checkbox" name="btSelectAll"/>
+								</td>
+								<td>2018-03-16 11:33:00	</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-ok-circle"style="background: #1ab394;">执行一次</i></a>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="btSelectAll"/>  3</td>
+								<td>系统默认（多参）</td>
+								<td>默认</td>
+								<td>ryTask.ryNoParams</td>
+								<td>0/10 * * * * ?</td>
+								<td>
+									<input type="checkbox" name="btSelectAll"/>
+								</td>
+								<td>2018-03-16 11:33:00	</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-ok-circle"style="background: #1ab394;">执行一次</i></a>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="bor">
+					第 1 到 3 条，共 3 条记录。
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户管理</title>
+		<link rel="stylesheet" type="text/css" href="css/user%20management.css"/>
+		<link rel="stylesheet" type="text/css" href="layui-v2.5.4/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<div class="top">
+				<ul>
+					<li>登录名称：<input type="text" name="loginname"/></li>
+					<li>手机号码：<input type="text" name="loginname"/></li>
+					<li>用户状态：<input type="text" name="loginname" value="所有"/></li>
+					<li>
+						<label>创建时间：</label>
+						<input type="text" name="params[beginTime]" id="startTime" class="select-time" placeholder="开始时间"/>
+						<span>-</span>
+						<input type="text" name="params[beginTime]" id="startTime" class="select-time" placeholder="结束时间"/>
+					</li>
+					<li class="layui-btn layui-btn-radius layui-btn-normal"><i class="layui-icon layui-icon-search"></i>搜索</li>
+					<li class="layui-btn layui-btn-radius layui-btn-warm"><i class="layui-icon layui-icon-refresh-3"></i>重置</li>
+				</ul>
+			</div>
+			<div class="nav">
+				<div class="bootstrap-table">
+					<div class="btn-kuai">
+						<li>
+							<a href=""><i class="layui-btn layui-icon layui-icon-add-1" >新增</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-survey"style="background: #6dd9c3;">修改</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-close"style="background: #f59da6;">删除</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-upload-circle"style="background: #21b9bb;">导入</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-upload-circle"style="background: #f7a54a;">导出</i></a>
+						</li>
+						<li>
+							<div class="layui-btn-group">
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-search"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-refresh-3"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-tabs"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-table"></i>
+								</button>
+							</div>
+						</li>
+					</div>
+					<div class="btn-nav">
+						<table border="0" cellspacing="" cellpadding="">
+							<tr style="background: #eff3f8;">
+								<td><input type="checkbox" name="btSelectAll"/>
+								用户ID
+								</td>
+								<td>登录名称</td>
+								<td>用户名称</td>
+								<td>部门</td>
+								<td>手机</td>
+								<td>用户状态</td>
+								<td>创建时间</td>
+								<td>操作</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="btSelectAll"/>1</td>
+								<td>admin</td>
+								<td>若依</td>
+								<td>研发部门</td>
+								<td>15888888888</td>
+								<td>
+									<input type="checkbox" name="btSelectAll"/>
+								</td>
+								<td>2018-03-16 11:33:00	</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-add-1" >新增</i></a>
+									<a href="Modify Users.html"><i class="layui-btn layui-icon layui-icon-survey"style="background: #6dd9c3;">修改</i></a>
+									<a href=""><i class="layui-btn layui-icon layui-icon-close"style="background: #f59da6;">删除</i></a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td><input type="checkbox" name="btSelectAll"/>1</td>
+								<td>admin</td>
+								<td>若依</td>
+								<td>研发部门</td>
+								<td>15888888888</td>
+								<td>
+									<input type="checkbox" name="btSelectAll"/>
+								</td>
+								<td>2018-03-16 11:33:00	</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-add-1" >新增</i></a>
+									<a href="Modify Users.html"><i class="layui-btn layui-icon layui-icon-survey"style="background: #6dd9c3;">修改</i></a>
+									<a href=""><i class="layui-btn layui-icon layui-icon-close"style="background: #f59da6;">删除</i></a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="bor">
+					第 1 到 2 条，共 2 条记录。
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

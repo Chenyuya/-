@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>参数设置</title>
+		<link rel="stylesheet" type="text/css" href="layui-v2.5.4/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Parameter%20Settings.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<div class="top">
+				<ul>
+					<li>参数名称：<input type="text" name="loginname"/></li>
+					<li>参数键名：<input type="text" name="loginname"/></li>
+					<li>系统内置：<input type="text" name="loginname" value="所有"/></li>
+					<li>
+						<label>创建时间：</label>
+						<input type="text" name="params[beginTime]" id="startTime" class="select-time" placeholder="开始时间"/>
+						<span>-</span>
+						<input type="text" name="params[beginTime]" id="startTime" class="select-time" placeholder="结束时间"/>
+					</li>
+					<li class="layui-btn layui-btn-radius layui-btn-normal"><i class="layui-icon layui-icon-search"></i>搜索</li>
+					<li class="layui-btn layui-btn-radius layui-btn-warm"><i class="layui-icon layui-icon-refresh-3"></i>重置</li>
+				</ul>
+			</div>
+			<div class="nav">
+				<div class="bootstrap-table">
+					<div class="btn-kuai">
+						<li>
+							<a href=""><i class="layui-btn layui-icon layui-icon-add-1">新增</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-survey"style="background: #6dd9c3;">修改</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-close"style="background: #f59da6;">删除</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-upload-circle"style="background: #f7a54a;">导出</i></a>
+						</li>
+						<li>
+							<div class="layui-btn-group">
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-search"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-refresh-3"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-tabs"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-table"></i>
+								</button>
+							</div>
+						</li>
+					</div>
+					<div class="btn-nav">
+						<table border="0" cellspacing="" cellpadding="">
+							<tr style="background: #eff3f8; height: 40px;">
+								<td><input type="checkbox" name="btSelectAll"/>
+								参数主键
+								</td>
+								<td>参数名称</td>
+								<td>参数键名</td>
+								<td>参数键值</td>
+								<td>系统内置</td>
+								<td>备注</td>
+								<td>创建时间</td>
+								<td>操作</td>
+							</tr>
+							
+							<tr style="height: 40px;">
+								<td><input type="checkbox" name="btSelectAll"/>  1</td>
+								<td>主框架页-默认皮肤样式名称</td>
+								<td>sys.index.skinName</td>
+								<td>skin-blue</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius back">是</button>
+								</td>
+								<td>蓝色 skin-blue、绿色 skin...</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-survey"style="background: #1c84c6;">编辑</i></a>
+									<a href=""><i class="layui-btn layui-icon layui-icon-close"style="background: #ec4758;">删除</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 40px;">
+								<td><input type="checkbox" name="btSelectAll"/>  2</td>
+								<td>用户管理-账号初始密码</td>
+								<td>sys.index.skinName</td>
+								<td>123456</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius back">是</button>
+								</td>
+								<td>初始化密码 123456</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-survey"style="background: #1c84c6;">编辑</i></a>
+									<a href=""><i class="layui-btn layui-icon layui-icon-close"style="background: #ec4758;">删除</i></a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="bor">
+					第 1 到 2 条，共 2 条记录。
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>修改用户</title>
+		<link rel="stylesheet" type="text/css" href="css/Modify%20Users.css"/>
+		<link rel="stylesheet" type="text/css" href="layui-v2.5.4/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<div class="top">
+				基本信息
+			</div>
+			<div class="row">
+				<div class="col-sm-6" style="margin-bottom: 15px;">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">
+							<span style="color: red;">*</span>用户名称：
+						</label>
+						<div class="col-sm-8">
+							<input type="text" name="username" required id="userName" value="若依" 
+							placeholder="请输入用户名称" class="form-control" maxlength="30" aria-required="true"/>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6" style="margin-bottom: 15px;">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">
+							<span style="color: red;">*</span>归属部门：
+						</label>
+						<div class="col-sm-8">
+							<div class="input-group">
+								<input type="text" name="dept.deptName" onclick="selectDeptTree()" id="treeName" 
+								required value="研发部门"  class="form-control" aria-required="true"/>
+								<span class="input-group-addon" style="background: #fff;">
+									<i class="layui-icon layui-icon-search"></i>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6" style="margin-bottom: 15px;">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">
+							<span style="color: red;">*</span>手机号码：
+						</label>
+						<div class="col-sm-8">
+							<input type="text" name="username" required id="userName" value="15888888888" 
+							placeholder="15888888888" class="form-control" maxlength="30" aria-required="true"/>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6" style="margin-bottom: 15px;">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">
+							<span style="color: red;">*</span>邮箱：
+						</label>
+						<div class="col-sm-8">
+							<input type="text" name="username" required id="userName" value="ry@163.com" 
+							placeholder="15888888888" class="form-control" maxlength="30" aria-required="true"/>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6" style="margin-bottom: 15px;">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">
+							<span style="color: red;">*</span>登录账号：
+						</label>
+						<div class="col-sm-8">
+							<input type="text" name="username" required id="userName" value="admin" 
+							placeholder="admin" class="form-control" maxlength="30" aria-required="true"/ style="background: #EEE;">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6" style="margin-bottom: 15px;">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">
+							用户状态：
+						</label>
+						<div class="col-sm-8" style="padding-top: 7px;">
+							<input type="checkbox" name="xxx" lay-skin="switch">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6" style="margin-bottom: 15px;">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">
+							<!-- <span style="color: red;">*</span> -->岗位：
+						</label>
+						<div class="col-sm-8">
+							<input type="text" name="username" required id="userName" value="" 
+							placeholder="" class="form-control" maxlength="30" aria-required="true"/ style="width: 485px;">
+							<!-- <select id="post" class="form-control select2-multiple select2-hidden-accessible valid" multiple data-select-2-id
+							="post" tabindex="-1" aria-hidden="true" aria-invalid="false">
+								<option value ="1" selected="selected" data-select-2-id="2">董事长</option>
+								<option value ="2" data-select-2-id="7">项目经理</option>
+								<option value ="3" data-select-2-id="8">人力资源</option>
+								<option value ="4" data-select-2-id="9">普通员工</option>
+							</select>
+							<span class="select2 select2-container select2-container--bootstrap select2-container--below" style="width: 485px;"></span> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6" style="margin-bottom: 15px;">
+					<div class="form-group">
+						<label class="col-sm-4 control-label">
+							<!-- <span style="color: red;">*</span> -->用户性别：
+						</label>
+						<div class="col-sm-8">
+							<select style="width: 531px; height: 34px; text-indent: 5px;">
+								<option value ="男">男</option>
+								<option value ="女">女</option>
+								<option value ="女"></option>
+							</select>
+							<!-- <div class="input-group">
+								<input type="text" name="dept.deptName" onclick="selectDeptTree()" id="treeName" 
+								required value="ry@163.com"  class="form-control" aria-required="true"/>
+								<span class="input-group-addon" style="background: #fff;">
+									<i class="layui-icon layui-icon-search"></i>
+								</span>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<label class="col-xs-2 control-label">角色：</label>
+						<div class="col-xs-10" style="padding-top: 10px;">
+							<input type="checkbox" name="xxx" lay-skin="switch" >
+							管理员
+							<input type="checkbox" name="xxx" lay-skin="switch" style="margin-left: 10px;">
+							普通角色
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top">
+				其他信息
+			</div>
+			<div class="row">
+				<div class="col-sm-12" style="margin-bottom: 25px;">
+					<div class="form-group">
+						<label class="col-xs-2 control-label">备注：</label>
+						<div class="col-xs-10">
+							<textarea rows="3" name="remark" maxlength="500" class="form-control" aria-invalid="false">管理员</textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-5 col-sm-10" >
+					<button type="button"class="btn btn-sm " style="background: #1AB394; color: #fff;">
+						<i class="layui-icon layui-icon-ok"></i>保存
+					</button>
+					
+					<button type="button"class="btn btn-sm " style="background: #ed5565; color: #fff;margin-left: 10px;">
+						<i class="layui-icon layui-icon-close"></i>关闭
+					</button>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

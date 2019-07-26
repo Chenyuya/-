@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>操作日志</title>
+		<link rel="stylesheet" type="text/css" href="layui-v2.5.4/layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Operational%20Log.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+	</head>
+	<body>
+		<div class="main">
+			<div class="top">
+				<ul>
+					<li>系统模块：<input type="text" name="loginname"/></li>
+					<li>操作人员：<input type="text" name="loginname"/></li>
+					<li>操作类型：<input type="text" name="loginname" value="请选择"/></li>
+					<li>操作状态：<input type="text" name="loginname" value="所有"/></li>
+					<li>
+						<label>创建时间：</label>
+						<input type="text" name="params[beginTime]" id="startTime" class="select-time" placeholder="开始时间"/>
+						<span>-</span>
+						<input type="text" name="params[beginTime]" id="startTime" class="select-time" placeholder="结束时间"/>
+					</li>
+					<li class="layui-btn layui-btn-radius layui-btn-normal"><i class="layui-icon layui-icon-search"></i>搜索</li>
+					<li class="layui-btn layui-btn-radius layui-btn-warm" ><i class="layui-icon layui-icon-refresh-3"></i>重置</li>
+				</ul>
+			</div>
+			<div class="nav">
+				<div class="bootstrap-table">
+					<div class="btn-kuai">
+						<li>
+							<a href=""><i class="layui-btn layui-icon layui-icon-close"style="background: #f59da6;">删除</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-delete"style="background: #ed5565;">清除</i></a>
+							<a href=""><i class="layui-btn layui-icon layui-icon-upload-circle"style="background: #f7a54a;">导出</i></a>
+						</li>
+						<li>
+							<div class="layui-btn-group">
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-search"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-refresh-3"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-tabs"></i>
+								</button>
+								<button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+									<i class="layui-icon layui-icon-table"></i>
+								</button>
+							</div>
+						</li>
+					</div>
+					<div class="btn-nav">
+						<table border="0" cellspacing="" cellpadding="">
+							<tr style="background: #eff3f8; height: 45px;">
+								<td><input type="checkbox" name="btSelectAll"/>
+								日志编号
+								</td>
+								<td>系统模块</td>
+								<td style="align-content: center;">操作类型</td>
+								<td>操作人员</td>
+								<td>部门名称</td>
+								<td>主机</td>
+								<td>操作地点</td>
+								<td>操作状态</td>
+								<td>操作时间</td>
+								<td>操作</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30094</td>
+								<td>定时任务</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #23c6c8;">修改</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30093</td>
+								<td>定时任务</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #23c6c8;">修改</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30092</td>
+								<td>定时任务</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #f8ac59; align-content: center;">生成代码</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30091</td>
+								<td>定时任务</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #23c6c8;">修改</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30090</td>
+								<td>定时任务</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #23c6c8;">修改</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30089</td>
+								<td>在线用户</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #ed5565;">强退</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30088</td>
+								<td>定时任务</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #23c6c8;">修改</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30087</td>
+								<td>定时任务</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #23c6c8;">修改</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30086</td>
+								<td>定时任务</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #23c6c8;">修改</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+							
+							<tr style="height: 35px;">
+								<td><input type="checkbox" name="btSelectAll"/>  30085</td>
+								<td>定时任务</td>
+								<td>
+									<button type="button" class="layui-btn layui-btn-sm layui-btn-radius"style="background: #f8ac59;">导入</button>
+								</td>
+								<td>admin</td>
+								<td>研发部门</td>
+								<td>58.250.192.1</td>
+								<td>广东 深圳</td>
+								<td>
+									<a href=""><i class="layui-btn layui-btn-sm layui-btn-radius back">成功</i></a>
+								</td>
+								<td>2018-03-16 11:33:00</td>
+								<td>
+									<a href=""><i class="layui-btn layui-icon layui-icon-search"style="background: #f7a54a;">详细</i></a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="bor">
+					<div class="left-bor">
+						第 1 到 10 条，共 29996 条记录。
+						<select name="number">
+							<option value ="10">10</option>
+							<option value ="25">25</option>
+							<option value ="50">50</option>
+						</select>
+							条记录每页
+					</div>
+					<div class="right-bor">
+						<div class="layui-btn-group">
+						  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+							<i class="layui-icon">&#xe603;</i>
+						  </button>
+						  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+							<i class="layui-icon">1</i>
+						  </button>
+						  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						  	<i class="layui-icon">2</i>
+						  </button>
+						  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						  	<i class="layui-icon">3</i>
+						  </button>
+						  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						  	<i class="layui-icon">4</i>
+						  </button>
+						  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						  	<i class="layui-icon">&#xe65f;</i>
+						  </button>
+						  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+						  	<i class="layui-icon">3000</i>
+						  </button>
+						  <button type="button" class="layui-btn layui-btn-primary layui-btn-sm">
+							<i class="layui-icon">&#xe602;</i>
+						  </button> 
+						</div>
+						<button type="button" class="layui-btn layui-btn-sm layui-btn-primary">
+						  <i class="layui-icon">1</i>
+						</button>
+						<button type="button" class="layui-btn layui-btn-sm layui-btn-primary mar">
+						  <i class="layui-icon">跳转</i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
